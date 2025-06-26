@@ -62,7 +62,7 @@ const addExpense=async(title,amount)=>{
 console.log(expense[0])
 const deleteExpense = async (id) => {
     try {
-      const response = await fetch(`https://expense-backend-zegz.onrender.com/expense${id}`, {
+      const response = await fetch(`https://expense-backend-zegz.onrender.com/expense/${id}`, {
         method: 'DELETE',
       });
 
